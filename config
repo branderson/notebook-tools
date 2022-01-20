@@ -1,0 +1,15 @@
+# Notes Tools
+NOTES_TOOLS_PATH=/home/brad/workspace/notes-tools
+TESTS_PATH=$NOTES_TOOLS_PATH/tests
+
+
+# Wikis
+WIKI_PATH=/home/brad/synced-notebooks
+BRADWIKI_PATH=$WIKI_PATH/bradwiki
+SHAREDWIKI_PATH=$WIKI_PATH/sharedwiki
+
+BACKUP_PATH=/home/brad/synced-notebooks/.backup
+
+
+# Tags
+TAG_IGNORE_AFTER="IgnoreAfter"

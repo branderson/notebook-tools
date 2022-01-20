@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Source the config file
+dir_path=$(dirname $(realpath $0))
+parent_path=$(dirname $dir_path)
+ 
+config_file="$parent_path/config"
+source $config_file
+
 # Lists absolute paths to all files in synced-notebooks directory which contain the given tag. Don't include ":"s around tags passed to this tool
 
 # TODOs
@@ -11,4 +18,4 @@
 # Flags:
 # -l only list filenames
 # -i search case-insensitively
-ag -il ":$1:" /home/brad/synced-notebooks/
+ag -il ":$1:" "$WIKI_PATH"
